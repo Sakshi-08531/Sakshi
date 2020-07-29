@@ -9,7 +9,7 @@ public class IG_Info {
 
 		public static void main(String[] args) {
 		String company="ABC Infotech";
-	// Get Place
+	// Get 
 	String response= given().log().all()
 			                .when().get("http://demo4032024.mockable.io/apitest").then().assertThat().log().all().statusCode(200).extract().response().asString();
 	
